@@ -1,0 +1,319 @@
+{
+    "absol": [
+        {
+            "name": "Super Luck",
+            "desc": "Increases Critical-Hit rate by 15%."
+        }
+    ],
+    "aegislash": [
+        {
+            "name": "No Guard",
+            "desc": "Increases received damage and dealt damage by Honedge/Doublade.",
+            "evolution": "honedge"
+        },
+        {
+            "name": "Stance Change",
+            "desc": "Aegislash can switch between Blade Stance and Shield Stance. Using a blade move switches stance to Blade Stance, which increases Attack, movement speed, and basic attack speed. Using a shield move switches stance to Shield Stance, which increases Defense and Sp. Defense. After switching stances, movement speed and basic attack speed are further increased for a short time.",
+            "fields": [
+                {
+                    "title": "Defense - Increase (Shield Stance)",
+                    "value": "0% Atk + 25 x (Level - 1) + 50",
+                    "calc_variables": {
+                        "atk_modifier": 0,
+                        "lvl_modifier": 25,
+                        "addend": 50
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Special Defense - Increase (Shield Stance)",
+                    "value": "0% Atk + 20 x (Level - 1) + 20",
+                    "calc_variables": {
+                        "atk_modifier": 0,
+                        "lvl_modifier": 20,
+                        "addend": 20
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Attack - Increase (Sword Stance):",
+                    "value": "0% Atk + 10 x (Level - 1) + 40",
+                    "calc_variables": {
+                        "atk_modifier": 0,
+                        "lvl_modifier": 10,
+                        "addend": 40
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "blastoise": [
+        {
+            "name": "Torrent",
+            "desc": "Increases Attack and Sp. Attack by 20% while at half HP or less."
+        }
+    ],
+    "blissey": [
+        {
+            "name": "Natural Cure",
+            "desc": "Every 6 seconds Blissey will automatically cleanse themselves. Natural Cure will activate even if Blissey has no active debuffs."
+        }
+    ],
+    "charizard": [
+        {
+            "name": "Blaze",
+            "desc": "Increases critical hit rate by 20% while at half HP or less."
+        }
+    ],
+    "cinderace": [
+        {
+            "name": "Blaze",
+            "desc": "When at half HP or less, critical-hit rate is increased by 10% and basic attack speed is increased by 20% for a short time. When hitting an enemy with a basic attack, a cinder is placed on that enemy for 5s. Boosted Attacks and moves apply 2 cinders. When the target receives it's 5th cinder, they will all be consumed to deal additional damage to the enemy."
+        }
+    ],
+    "cramorant": [
+        {
+            "name": "Gulp Missile",
+            "desc": "When Cramorant has prey in its mouth, it will counterattack upon taking damage from an enemy.  Alternatively, Cramorant can shoot the prey at his enemy as a boosted basic attack. The prey bounces to 1 nearby enemy.\n\nAt high HP, caught prey will be Arrokuda, which deals damage to the enemy.  At low HP, the prey will be Pikachu which deals damage to the enemy and slows them."
+        }
+    ],
+    "crustle": [
+        {
+            "name": "Sturdy",
+            "desc": "Gains 5 + (Level - 1) Defense and Sp. Defense for every 7% of Crustle's missing HP. Stacks 10 times."
+        }
+    ],
+    "decidueye": [
+        {
+            "name": "Long Reach",
+            "desc": "Deals 20% increased damage to distant enemies."
+        }
+    ],
+    "dragonite": [
+        {
+            "name": "Marvel Scale",
+            "desc": "Increases Defense by 100 when afflicted by a status condition (Dratini and Dragonair only).",
+            "evolution": "dratini"
+        },
+        {
+            "name": "Multiscale",
+            "desc": "When damaged by an enemy player, gain a buff that reduces damage taken by 20% for 2.5 seconds. This ability has a 15 second cooldown.",
+            "evolution": "dragonite"
+        }
+    ],
+    "eldegoss": [
+        {
+            "name": "Cotton Down",
+            "desc": "When receiving a certain amount of damage, recover HP, deal revenge damage, and decrease the enemies movement speed for a short time.",
+            "fields": [
+                {
+                    "title": "Damage - Revenge",
+                    "value": "35% SpA + 0 x (Level - 1) + 150",
+                    "calc_variables": {
+                        "atk_modifier": 0.35,
+                        "lvl_modifier": 0,
+                        "addend": 150
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Healing - Revenge",
+                    "value": "65% SpA + 0 x (Level - 1) + 165",
+                    "calc_variables": {
+                        "atk_modifier": 0.65,
+                        "lvl_modifier": 0,
+                        "addend": 165
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "garchomp": [
+        {
+            "name": "Rough Skin",
+            "desc": "When Garchomp takes a hit from a physical attack by a melee Pokémon, a portion of that damage is also dealt to the attacker. 2s cooldown and this damage is subject to defense reduction."
+        }
+    ],
+    "gardevoir": [
+        {
+            "name": "Synchronize",
+            "desc": "When an enemy inflicts decreased movement speed or a damage-over-time effect on Gardevoir, movement speed reduction or damage is inflicted back to the attacker, respectively. This ability has a 9s cooldown after it's triggered.",
+            "fields": [
+                {
+                    "title": "Damage - Reflected",
+                    "value": "50% SpA + 0 x (Level - 1) + 50",
+                    "calc_variables": {
+                        "atk_modifier": 0.5,
+                        "lvl_modifier": 0,
+                        "addend": 50
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "gengar": [
+        {
+            "name": "Levitate",
+            "desc": "Increases movement speed by 10% when out of combat for 7s."
+        }
+    ],
+    "greedent": [
+        {
+            "name": "Cheek Pouch",
+            "desc": "When Greedent eats a berry, recover HP after receiving the effects of the berry. At the same time, Greedent stashes an Oran berry in its tail. Being hit by a single attack or combination of attacks will cause an Oran berry to drop from Greedent's tail. Berries stay on the ground for 10s.\n\nIf any ally or enemy eats an Oran Berry, they heal for 45 + 2% max HP (unless the enemy is Greedent). Greedent enemies that eat an Oran Berry heal for 45 + 5 x (Level -1) + 2% max HP"
+        }
+    ],
+    "greninja": [
+        {
+            "name": "Torrent",
+            "desc": "While HP is at 50% or less, Attack is increased by 5% and movement speed is increased by 12%."
+        }
+    ],
+    "hoopa": [
+        {
+            "name": "Magician",
+            "desc": "In battles where the map is divided into an ally team side and an opposing team side, this ability creates a hole under one of the berries on the opposing team's side (chosen at random) and warps it in front of Hoopa (40s cooldown). If there are no berries, but there is Aeos Energy on the ground, then some energy is warped in front of Hoopa instead. In the event that no berries from the opposing team's side are warped, the cooldown of this ability is reduced to 20s."
+        }
+    ],
+    "lucario": [
+        {
+            "name": "Steadfast",
+            "desc": "When dropping below 50% HP, gain a shield and increased movement speed for 5s (60s cooldown).",
+            "fields": [
+                {
+                    "title": "Shield",
+                    "value": "250% Atk + 50 x (Level - 1) + 50",
+                    "calc_variables": {
+                        "atk_modifier": 2.5,
+                        "lvl_modifier": 50,
+                        "addend": 50
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "machamp": [
+        {
+            "name": "Guts",
+            "desc": "Increases Attack by 10% for 5s when afflicted by a status condition."
+        }
+    ],
+    "mamoswine": [
+        {
+            "name": "Thick Fat",
+            "desc": "When Mamoswine deals damage, Defense and Sp. Def are increased for 3s, stacking up to 3 times. When Mamoswine uses Ice Shard, Icicle Crash or Ice Fang, the next basic attack is boosted. If any of these moves creates a freezing area of effect inside an ally goal zone, the goal-scoring speed of enemies is decreased.",
+            "fields": [
+                {
+                    "title": "Defense & Sp. Defense",
+                    "value": "0% Atk + 6 x (Level - 1) + 20",
+                    "calc_variables": {
+                        "atk_modifier": 0,
+                        "lvl_modifier": 6,
+                        "addend": 20
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "mr.mime": [
+        {
+            "name": "Filter",
+            "desc": "Upon casting an ability, Mr. Mime takes 10% less damage for 2 seconds."
+        }
+    ],
+    "ninetales": [
+        {
+            "name": "Snow Warning",
+            "desc": "Causes snow to fall on an enemy, dealing damage to it and decreasing their movement speed for a short time. Boosted attacks and moves (except Aurora Veil) sling snow, and hitting the same target with snow multiple times will freeze it for a short time. This ability has an 8s cooldown.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "60% SpA + 0 x (Level - 1) + 100",
+                    "calc_variables": {
+                        "atk_modifier": 0.6,
+                        "lvl_modifier": 0,
+                        "addend": 100
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "pikachu": [
+        {
+            "name": "Static",
+            "desc": "Paralyzes (slow) all enemies nearby for a short time when receiving damage. This ability goes on a 30s cooldown after it's triggered."
+        }
+    ],
+    "slowbro": [
+        {
+            "name": "Oblivious",
+            "desc": "Slowbro stores up lost HP for a short time. When hitting an enemy with a move, restore some HP using the stored-up health, and also decrease the enemy's Sp.Def for a short time."
+        }
+    ],
+    "snorlax": [
+        {
+            "name": "Gluttony",
+            "desc": "Increases the effects gained from eating berries. 25% increased movement speed when near berries and doubles the amount healed from the Sitrus berry (yellow berry)."
+        }
+    ],
+    "sylveon": [
+        {
+            "name": "Adaptability",
+            "desc": "Every time Eevee deals or receives damage, increase Sp. Attack by 5% for 1.5s, stacking up to 4 times.",
+            "evolution": "eevee"
+        },
+        {
+            "name": "Pixilate",
+            "desc": "Every time Sylveon deals or receives damage, increase Sp. Atk and Sp. Defense by 2.5% for 1.5s, stacking up to 6 times.",
+            "evolution": "sylveon"
+        }
+    ],
+    "talonflame": [
+        {
+            "name": "Gale Wings",
+            "desc": "While above 85% HP, movement speed is increased by 10%."
+        }
+    ],
+    "trevenant": [
+        {
+            "name": "Natural Cure",
+            "desc": "When Trevenant deals or receives damage while at or below 35% max HP, a continuous HP recovery effect is triggered every .5s for 4s. This effect also reduces the cooldowns of Trevenant's moves by 1s every 1s. When this HP recovery effect ends, there is a 100s cooldown. However, this cooldown is reduced by 1s each time one of Trevenant's moves damage an enemy. This cooldown reduction cannot be triggered more than once every .5s.\n\nHeal - 8 Ticks: 2% + (0.18% * (Level -1)) Max HP"
+        }
+    ],
+    "tsareena": [
+        {
+            "name": "Oblivious",
+            "desc": "When a hindrance is inflicted on Bounsweet, Steenee; decrease the duration of the effect.",
+            "evolution": "bounsweet"
+        },
+        {
+            "name": "Queenly Majesty",
+            "desc": "When a hindrance is inflicted on Tsareena; decrease the duration of the effect. Using a boosted attack or move grants 1 stack of Queenly Majesty to Tsareena. After gaining 3 stacks, the Queenly Majesty buff is applied to Tsareena for a short time, which allows one of Tsareena's moves to be reused (these uses do not share the same cooldown as the base moves), dealing increased damage and applying an additional effect based on the move used.",
+            "evolution": "tsareena"
+        }
+    ],
+    "venusaur": [
+        {
+            "name": "Overgrow",
+            "desc": "When HP is 30% or less, increase all damage dealt by 20%."
+        }
+    ],
+    "wigglytuff": [
+        {
+            "name": "Cute Charm",
+            "desc": "When hit by an enemy attack at close range, make that enemy infatuated for a short time. Infatuated enemies become enthralled and approach Wigglytuff against their will. This ability goes on a 9s cooldown when triggered."
+        }
+    ],
+    "zeraora": [
+        {
+            "name": "Volt Absorb",
+            "desc": "Converts 8% of the damage Zeraora was dealt as Atk, up to 200 Atk. Resets after not taking damage for 4 seconds."
+        }
+    ]
+}

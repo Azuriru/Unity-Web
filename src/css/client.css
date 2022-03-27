@@ -1,0 +1,29 @@
+:root {
+    --background-image: url(./assets/images/absol.png) center / contain no-repeat, radial-gradient(circle at center, #abdbe5, #4b628e);
+    --background-position-y: center;
+    --background-position-x: center;
+    --background-size: contain;
+    --background-repeat: no-repeat;
+    --background: var(--background-image) var(--background-position-x, center) var(--background-position-y, center) / var(--background-size, cover) var(--background-repeat) fixed;
+    --brightness: 0.5;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#app::before {
+    content: '';
+    background: var(--background);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(var(--brightness, 1)) contrast(var(--contrast, 1)) saturate(var(--saturate, 100%));
+}

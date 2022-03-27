@@ -1,0 +1,27 @@
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 4px solid rgb(255, 255, 255, 0.5);
+    padding: 48px 72px;
+    backdrop-filter: blur(5px);
+}
+
+.coming-soon .header {
+    font-size: 36px;
+}
+
+.coming-soon .sub {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 32px;
+}
+
+.coming-soon .footer {
+    align-self: flex-end;
+    font-weight: 500;
+    margin-top: 44px;
+}
