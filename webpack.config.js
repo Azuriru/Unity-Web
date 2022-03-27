@@ -2,7 +2,7 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    target: 'electron-main',
+    target: 'web',
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, 'output'),
